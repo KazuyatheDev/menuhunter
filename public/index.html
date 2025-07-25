@@ -36,25 +36,29 @@
             </div>
 
             <div class="menu-columns">
-                <div class="menu-section">
-                    <h2 class="section-title">
-                        <input type="text" class="section-title-editable" id="ulamTitle" value="TODAY'S MENU">
-                    </h2>
-                    <div class="menu-items" id="ulamSection"></div>
+                <div class="menu-column">
+                    <div class="menu-section">
+                        <h2 class="section-title">
+                            <input type="text" class="section-title-editable" id="ulamTitle" value="TODAY'S MENU">
+                        </h2>
+                        <div class="menu-items" id="ulamSection"></div>
+                    </div>
+
+                    <div class="menu-section">
+                        <h2 class="section-title">
+                            <input type="text" class="section-title-editable" id="silogTitle" value="SILOG OF THE DAY">
+                        </h2>
+                        <div class="menu-items" id="silogSection"></div>
+                    </div>
                 </div>
 
-                <div class="menu-section">
-                    <h2 class="section-title">
-                        <input type="text" class="section-title-editable" id="silogTitle" value="SILOG OF THE DAY">
-                    </h2>
-                    <div class="menu-items" id="silogSection"></div>
-                </div>
-
-                <div class="menu-section">
-                    <h2 class="section-title">
-                        <input type="text" class="section-title-editable" id="sidesTitle" value="MERIENDA AND DRINKS">
-                    </h2>
-                    <div class="menu-items" id="sidesSection"></div>
+                <div class="menu-column">
+                    <div class="menu-section">
+                        <h2 class="section-title">
+                            <input type="text" class="section-title-editable" id="sidesTitle" value="MERIENDA AND DRINKS">
+                        </h2>
+                        <div class="menu-items" id="sidesSection"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,18 +69,18 @@
         
         <div class="control-row">
             <div class="control-group">
-                <label>First Section Title:</label>
+                <label>Today's Menu Title:</label>
                 <input type="text" id="ulamTitleInput" value="TODAY'S MENU">
             </div>
             <div class="control-group">
-                <label>Second Section Title:</label>
+                <label>Silog Section Title:</label>
                 <input type="text" id="silogTitleInput" value="SILOG OF THE DAY">
             </div>
         </div>
 
         <div class="control-row">
             <div class="control-group">
-                <label>Third Section Title:</label>
+                <label>Merienda Section Title:</label>
                 <input type="text" id="sidesTitleInput" value="MERIENDA AND DRINKS">
             </div>
             <div class="control-group">

@@ -133,10 +133,16 @@
 
 .menu-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
     z-index: 2;
     position: relative;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .menu-section {
