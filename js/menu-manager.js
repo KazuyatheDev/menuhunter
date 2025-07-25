@@ -27,8 +27,8 @@ const MenuManager = {
     },
 
     restaurantInfo: {
-        name: "HUNTER MENU",
-        subtitle: "CARENDERIA MENU",
+        name: "HUNTER'S FOODHOUSE",
+        subtitle: "DINE IN. TAKEOUT. DELIVERY.",
         phone: "+63 915 686 7134",
         location: "Arezzo Place Condominium Pasig, Philippines"
     },
