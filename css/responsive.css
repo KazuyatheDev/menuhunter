@@ -1,0 +1,196 @@
+/* Mobile Responsive Styles - Compact */
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    .menu-container {
+        max-width: 100%;
+    }
+
+    .menu-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 15px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .restaurant-name {
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+
+    .menu-subtitle {
+        font-size: 0.6em;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    .contact-label {
+        font-size: 0.65em;
+    }
+
+    .menu-content {
+        padding: 15px 10px;
+    }
+
+    .menu-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-section {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .item-name {
+        font-size: 0.8em;
+    }
+
+    .item-price {
+        font-size: 0.8em;
+    }
+
+    .item-description {
+        font-size: 0.65em;
+    }
+
+    .date-display {
+        font-size: 0.7em;
+        padding: 5px 15px;
+    }
+
+    .watermark {
+        font-size: 3em;
+    }
+
+    .control-row {
+        grid-template-columns: 1fr;
+    }
+
+    .item-editor {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .controls {
+        padding: 15px;
+    }
+
+    .controls h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .menu-editor h4 {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+
+    .section-title-editable {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-name {
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+
+    .menu-subtitle {
+        font-size: 0.55em;
+    }
+
+    .section-title {
+        font-size: 0.9em;
+    }
+
+    .item-name {
+        font-size: 0.75em;
+    }
+
+    .item-price {
+        font-size: 0.75em;
+    }
+
+    .item-description {
+        font-size: 0.6em;
+    }
+
+    .menu-content {
+        padding: 10px 8px;
+    }
+
+    .menu-section {
+        padding: 8px;
+    }
+
+    .controls {
+        padding: 10px;
+    }
+
+    .controls h3 {
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+
+    .menu-editor h4 {
+        font-size: 0.85em;
+        margin-bottom: 8px;
+    }
+
+    .section-title-editable {
+        font-size: 0.8em;
+    }
+
+    .button-group button {
+        font-size: 0.8em;
+        padding: 10px 15px;
+    }
+
+    .watermark {
+        font-size: 2.5em;
+    }
+}
+
+/* Print and image generation optimizations */
+@media print {
+    .controls {
+        display: none !important;
+    }
+    
+    .menu-container {
+        box-shadow: none;
+        max-width: none;
+        width: 100%;
+    }
+    
+    body {
+        background: white !important;
+        padding: 0;
+    }
+}

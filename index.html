@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carenderia Menu Board</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-board.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="menu-container" id="menuBoard">
+        <div class="menu-header">
+            <div class="logo-section">
+                <div class="logo-container" id="logoContainer">
+                    <img src="Asset/hunter menu.jpg" alt="Hunter Menu Logo" class="logo-image" id="logoImage">
+                </div>
+                <div class="header-text">
+                    <h1 class="restaurant-name" id="restaurantName">HUNTER MENU</h1>
+                    <div class="menu-subtitle" id="subtitle">CARENDERIA MENU</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-label">CONTACT US:</div>
+                <div id="contactPhone">+63 915 686 7134</div>
+                <div id="contactLocation">Arezzo Place Condominium Pasig, Philippines</div>
+                <div class="store-hours">Monday - Saturday ( 7:00 am - 9:00 pm )</div>
+            </div>
+        </div>
+
+        <div class="menu-content">
+            <div class="watermark">MENU</div>
+            
+            <div class="date-section">
+                <div class="date-display" id="dateDisplay">FRIDAY, JULY 25, 2025</div>
+            </div>
+
+            <div class="menu-columns">
+                <div class="menu-section">
+                    <h2 class="section-title">
+                        <input type="text" class="section-title-editable" id="ulamTitle" value="ULAM NG ARAW">
+                    </h2>
+                    <div class="menu-items" id="ulamSection"></div>
+                </div>
+
+                <div class="menu-section">
+                    <h2 class="section-title">
+                        <input type="text" class="section-title-editable" id="sidesTitle" value="KANIN AT INUMIN">
+                    </h2>
+                    <div class="menu-items" id="sidesSection"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <h3>DAILY MENU EDITOR</h3>
+        
+        <div class="control-row">
+            <div class="control-group">
+                <label>First Section Title:</label>
+                <input type="text" id="ulamTitleInput" value="ULAM NG ARAW">
+            </div>
+            <div class="control-group">
+                <label>Second Section Title:</label>
+                <input type="text" id="sidesTitleInput" value="KANIN AT INUMIN">
+            </div>
+        </div>
+
+        <div class="menu-editor">
+            <h4 id="ulamEditorTitle">ULAM NG ARAW</h4>
+            <div id="ulamEditor"></div>
+            <button onclick="MenuManager.addMenuItem('ulam')">+ ADD ULAM</button>
+        </div>
+
+        <div class="menu-editor">
+            <h4 id="sidesEditorTitle">KANIN AT INUMIN</h4>
+            <div id="sidesEditor"></div>
+            <button onclick="MenuManager.addMenuItem('sides')">+ ADD ITEM</button>
+        </div>
+
+        <div class="button-group">
+            <button onclick="MenuManager.updateMenu()">UPDATE MENU</button>
+            <button onclick="SocialShare.downloadImage()">DOWNLOAD IMAGE</button>
+        </div>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/menu-manager.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/social-share.js"></script>
+    
+    <!-- Initialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            MenuManager.init();
+            Editor.init();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "menuhunter",
+  "version": "1.0.0",
+  "description": "Hunter Menu - Digital Carenderia Menu Board",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "menu",
+    "carenderia",
+    "filipino",
+    "restaurant",
+    "digital-menu"
+  ],
+  "author": "Hunter Menu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/menuhunter.git"
+  },
+  "homepage": "https://menuhunter.vercel.app"
+}
