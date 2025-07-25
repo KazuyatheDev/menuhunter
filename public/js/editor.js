@@ -185,5 +185,23 @@ const Editor = {
         MenuManager.menuData[section].splice(index + 1, 0, duplicatedItem);
         this.createMenuEditor();
         MenuManager.saveData();
+    },
+
+    clearAllMenuItems() {
+        if (confirm('Are you sure you want to clear all menu items? This will not affect section titles.')) {
+            // Clear all menu items but keep section titles
+            Object.keys(MenuManager.menuData).forEach(section => {
+                MenuManager.menuData[section] = MenuManager.menuData[section].map(() => ({
+                    name: "",
+                    description: "",
+                    price: ""
+                }));
+            });
+            
+            this.createMenuEditor();
+            MenuManager.saveData();
+            MenuManager.updateMenuDisplay();
+            MenuManager.showMessage('All menu items cleared successfully!', 'success');
+        }
     }
 };
