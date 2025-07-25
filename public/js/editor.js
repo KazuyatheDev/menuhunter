@@ -7,13 +7,19 @@ const Editor = {
 
     createMenuEditor() {
         const ulamEditor = document.getElementById('ulamEditor');
+        const silogEditor = document.getElementById('silogEditor');
         const sidesEditor = document.getElementById('sidesEditor');
         
         ulamEditor.innerHTML = '';
+        silogEditor.innerHTML = '';
         sidesEditor.innerHTML = '';
 
         MenuManager.menuData.ulam.forEach((item, index) => {
             ulamEditor.appendChild(this.createItemEditor('ulam', index, item));
+        });
+
+        MenuManager.menuData.silog.forEach((item, index) => {
+            silogEditor.appendChild(this.createItemEditor('silog', index, item));
         });
 
         MenuManager.menuData.sides.forEach((item, index) => {
