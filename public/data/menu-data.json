@@ -1,0 +1,100 @@
+{
+  "restaurantInfo": {
+    "name": "LOLA'S CARENDERIA",
+    "subtitle": "CARENDERIA MENU",
+    "phone": "+639-123-456-789",
+    "location": "123 Main Street, Manila",
+    "logo": ""
+  },
+  "menuSections": {
+    "ulam": [
+      {
+        "name": "Adobong Manok",
+        "description": "Classic chicken adobo with soy sauce and vinegar",
+        "price": "₱85",
+        "category": "poultry",
+        "spicy": false,
+        "vegetarian": false
+      },
+      {
+        "name": "Sinigang na Baboy",
+        "description": "Pork sinigang with fresh vegetables and tamarind broth",
+        "price": "₱95",
+        "category": "pork",
+        "spicy": false,
+        "vegetarian": false
+      },
+      {
+        "name": "Ginisang Monggo",
+        "description": "Sautéed mung beans with pork and vegetables",
+        "price": "₱65",
+        "category": "vegetables",
+        "spicy": false,
+        "vegetarian": false
+      },
+      {
+        "name": "Fried Chicken",
+        "description": "Crispy golden fried chicken",
+        "price": "₱75",
+        "category": "poultry",
+        "spicy": false,
+        "vegetarian": false
+      },
+      {
+        "name": "Sweet and Sour Fish",
+        "description": "Fresh fish fillet in sweet and sour sauce",
+        "price": "₱90",
+        "category": "seafood",
+        "spicy": false,
+        "vegetarian": false
+      }
+    ],
+    "sides": [
+      {
+        "name": "Kanin",
+        "description": "Freshly steamed white rice",
+        "price": "₱15",
+        "category": "rice",
+        "spicy": false,
+        "vegetarian": true
+      },
+      {
+        "name": "Iced Tea",
+        "description": "Refreshing homemade iced tea",
+        "price": "₱25",
+        "category": "beverage",
+        "spicy": false,
+        "vegetarian": true
+      },
+      {
+        "name": "Softdrinks",
+        "description": "Assorted cold beverages",
+        "price": "₱30",
+        "category": "beverage",
+        "spicy": false,
+        "vegetarian": true
+      },
+      {
+        "name": "Soup",
+        "description": "Hot soup of the day",
+        "price": "₱20",
+        "category": "soup",
+        "spicy": false,
+        "vegetarian": false
+      }
+    ]
+  },
+  "settings": {
+    "currency": "₱",
+    "timezone": "Asia/Manila",
+    "businessHours": {
+      "open": "06:00",
+      "close": "20:00"
+    },
+    "socialMedia": {
+      "facebook": "",
+      "instagram": "",
+      "twitter": ""
+    }
+  }
+}
