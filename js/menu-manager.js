@@ -149,6 +149,8 @@ const MenuManager = {
     addMenuItem(section) {
         this.menuData[section].push({name: "", description: "", price: ""});
         Editor.createMenuEditor();
+        this.updateMenuDisplay();
+        this.saveData();
     },
 
     showMessage(message, type = 'info') {
