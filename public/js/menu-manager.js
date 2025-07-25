@@ -4,16 +4,18 @@ const MenuManager = {
             {name: "Adobong Manok", description: "Classic chicken adobo with soy sauce and vinegar", price: "₱85"},
             {name: "Sinigang na Baboy", description: "Pork sinigang with fresh vegetables and tamarind broth", price: "₱95"},
             {name: "Ginisang Monggo", description: "Sautéed mung beans with pork and vegetables", price: "₱65"},
-            {name: "Fried Chicken", description: "Crispy golden fried chicken", price: "₱75"},
-            {name: "Sweet and Sour Fish", description: "Fresh fish fillet in sweet and sour sauce", price: "₱90"},
-            {name: "Beef Caldereta", description: "Tender beef stew with vegetables", price: "₱110"}
+            {name: "Fried Chicken", description: "Crispy golden fried chicken", price: "₱75"}
+        ],
+        silog: [
+            {name: "Tapsilog", description: "Beef tapa with garlic rice and fried egg", price: "₱75"},
+            {name: "Longsilog", description: "Longganisa with garlic rice and fried egg", price: "₱65"},
+            {name: "Tocilog", description: "Sweet pork tocino with garlic rice and fried egg", price: "₱70"},
+            {name: "Bangsilog", description: "Bangus with garlic rice and fried egg", price: "₱80"}
         ],
         sides: [
             {name: "Kanin", description: "Freshly steamed white rice", price: "₱15"},
             {name: "Iced Tea", description: "Refreshing homemade iced tea", price: "₱25"},
             {name: "Softdrinks", description: "Assorted cold beverages", price: "₱30"},
-            {name: "Hot Soup", description: "Hot soup of the day", price: "₱20"},
-            {name: "Garlic Rice", description: "Fragrant garlic fried rice", price: "₱25"},
             {name: "Coffee", description: "Hot brewed coffee", price: "₱20"}
         ]
     },
@@ -27,6 +29,7 @@ const MenuManager = {
 
     sectionTitles: {
         ulam: "TODAY'S MENU",
+        silog: "SILOG OF THE DAY",
         sides: "MERIENDA AND DRINKS"
     },
 
@@ -68,12 +71,15 @@ const MenuManager = {
     populateInputs() {
         // Populate section title inputs
         document.getElementById('ulamTitleInput').value = this.sectionTitles.ulam;
+        document.getElementById('silogTitleInput').value = this.sectionTitles.silog;
         document.getElementById('sidesTitleInput').value = this.sectionTitles.sides;
         document.getElementById('ulamTitle').value = this.sectionTitles.ulam;
+        document.getElementById('silogTitle').value = this.sectionTitles.silog;
         document.getElementById('sidesTitle').value = this.sectionTitles.sides;
         
         // Update editor titles
         document.getElementById('ulamEditorTitle').textContent = this.sectionTitles.ulam;
+        document.getElementById('silogEditorTitle').textContent = this.sectionTitles.silog;
         document.getElementById('sidesEditorTitle').textContent = this.sectionTitles.sides;
     },
 
@@ -92,14 +98,17 @@ const MenuManager = {
     updateMenu() {
         // Update section titles
         this.sectionTitles.ulam = document.getElementById('ulamTitleInput').value.toUpperCase();
+        this.sectionTitles.silog = document.getElementById('silogTitleInput').value.toUpperCase();
         this.sectionTitles.sides = document.getElementById('sidesTitleInput').value.toUpperCase();
         
         // Update display titles
         document.getElementById('ulamTitle').value = this.sectionTitles.ulam;
+        document.getElementById('silogTitle').value = this.sectionTitles.silog;
         document.getElementById('sidesTitle').value = this.sectionTitles.sides;
         
         // Update editor titles
         document.getElementById('ulamEditorTitle').textContent = this.sectionTitles.ulam;
+        document.getElementById('silogEditorTitle').textContent = this.sectionTitles.silog;
         document.getElementById('sidesEditorTitle').textContent = this.sectionTitles.sides;
         
         // Update menu items display
@@ -113,6 +122,7 @@ const MenuManager = {
 
     updateMenuDisplay() {
         this.updateMenuSection('ulamSection', this.menuData.ulam);
+        this.updateMenuSection('silogSection', this.menuData.silog);
         this.updateMenuSection('sidesSection', this.menuData.sides);
     },
 
