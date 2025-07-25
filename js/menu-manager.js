@@ -6,11 +6,7 @@ const MenuManager = {
             {name: "Ginisang Monggo", description: "Sautéed mung beans with pork and vegetables", price: "₱65"},
             {name: "Fried Chicken", description: "Crispy golden fried chicken", price: "₱75"},
             {name: "Sweet and Sour Fish", description: "Fresh fish fillet in sweet and sour sauce", price: "₱90"},
-            {name: "Beef Caldereta", description: "Tender beef stew with vegetables", price: "₱110"},
-            {name: "Pork Menudo", description: "Pork menudo with liver and vegetables", price: "₱80"},
-            {name: "Chicken Curry", description: "Spicy chicken curry with coconut milk", price: "₱88"},
-            {name: "Fish Sinigang", description: "Fish sinigang with okra and kangkong", price: "₱85"},
-            {name: "Pork Sisig", description: "Sizzling pork sisig with onions", price: "₱95"}
+            {name: "Beef Caldereta", description: "Tender beef stew with vegetables", price: "₱110"}
         ],
         sides: [
             {name: "Kanin", description: "Freshly steamed white rice", price: "₱15"},
@@ -18,11 +14,7 @@ const MenuManager = {
             {name: "Softdrinks", description: "Assorted cold beverages", price: "₱30"},
             {name: "Hot Soup", description: "Hot soup of the day", price: "₱20"},
             {name: "Garlic Rice", description: "Fragrant garlic fried rice", price: "₱25"},
-            {name: "Fresh Juice", description: "Freshly squeezed fruit juice", price: "₱35"},
-            {name: "Coffee", description: "Hot brewed coffee", price: "₱20"},
-            {name: "Pancit", description: "Stir-fried noodles with vegetables", price: "₱45"},
-            {name: "Lumpia", description: "Fresh spring rolls (2 pieces)", price: "₱35"},
-            {name: "Banana Turon", description: "Fried banana rolls with sugar", price: "₱25"}
+            {name: "Coffee", description: "Hot brewed coffee", price: "₱20"}
         ]
     },
 
@@ -34,8 +26,8 @@ const MenuManager = {
     },
 
     sectionTitles: {
-        ulam: "ULAM NG ARAW",
-        sides: "KANIN AT INUMIN"
+        ulam: "TODAY'S MENU",
+        sides: "MERIENDA AND DRINKS"
     },
 
     init() {

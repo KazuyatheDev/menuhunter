@@ -10,7 +10,7 @@
 }
 
 .menu-header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #2C5F34 0%, #1e3a22 100%);
     color: white;
     padding: 20px 25px;
     display: flex;
@@ -67,6 +67,18 @@
     text-align: right;
     font-size: 0.75em;
     line-height: 1.4;
+}
+
+.contact-info div {
+    color: white !important;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.contact-info a {
+    color: white !important;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 .contact-label {
