@@ -70,19 +70,24 @@
 
     .menu-columns {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 5px;
     }
 
     .menu-section {
-        padding: 8px;
+        padding: 6px;
     }
 
     .menu-column {
-        gap: 6px !important;
+        gap: 5px !important;
     }
 
     .date-section {
-        margin-bottom: 8px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .date-display {
+        font-size: 1.1em !important;
+        padding: 1px 0 !important;
     }
 
     .section-title {
