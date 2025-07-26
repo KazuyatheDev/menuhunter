@@ -43,7 +43,7 @@
     }
 
     .menu-content {
-        padding: 10px 6px 6px 6px;
+        padding: 8px 5px 5px 5px;
     }
 
     .payment-footer {
@@ -70,11 +70,19 @@
 
     .menu-columns {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 12px;
     }
 
     .menu-section {
-        padding: 10px;
+        padding: 8px;
+    }
+
+    .menu-column {
+        gap: 6px !important;
+    }
+
+    .date-section {
+        margin-bottom: 8px !important;
     }
 
     .section-title {

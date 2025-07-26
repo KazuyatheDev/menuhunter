@@ -123,7 +123,7 @@
 
 .date-section {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     z-index: 2;
     position: relative;
 }
@@ -149,27 +149,27 @@
 .menu-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
 
 .menu-section {
     background: rgba(255,255,255,0.8);
-    padding: 10px;
+    padding: 8px;
     border-left: 3px solid #2C5F34;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border: 1px solid rgba(44, 95, 52, 0.1);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .section-title {
     color: #2c3e50;
     font-size: 1.3em;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     letter-spacing: 1px;
     text-align: left;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 
 .section-title-editable {
@@ -211,7 +211,6 @@
 
 .item-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 1px;
     position: relative;
@@ -223,8 +222,11 @@
     font-size: 18px;
     letter-spacing: 0.5px;
     line-height: 1.2;
-    flex: 1;
+    flex-shrink: 0;
     position: relative;
+    background: rgba(255,255,255,0.9);
+    padding-right: 4px;
+    order: 1;
 }
 
 .item-price {
@@ -232,21 +234,20 @@
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.5px;
-    margin-left: 4px;
     flex-shrink: 0;
     z-index: 2;
     background: rgba(255,255,255,0.9);
-    padding: 0 4px;
+    padding-left: 4px;
+    order: 3;
 }
 
 /* Dotted line between item name and price */
-.item-header::after {
+.item-header::before {
     content: '';
     flex: 1;
     border-bottom: 2px dotted #cccccc;
     margin: 0 8px;
-    height: 1px;
-    align-self: center;
+    order: 2;
 }
 
 .item-description {
