@@ -43,12 +43,29 @@
     }
 
     .menu-content {
-        padding: 12px 8px 8px 8px;
+        padding: 10px 6px 6px 6px;
     }
 
     .payment-footer {
         font-size: 0.65em;
         padding: 6px 10px;
+        font-style: italic;
+    }
+
+    .item-name {
+        font-size: 16px !important;
+    }
+
+    .item-price {
+        font-size: 16px !important;
+    }
+
+    .item-description {
+        font-size: 9px !important;
+    }
+
+    .section-title {
+        font-size: 1.1em !important;
     }
 
     .menu-columns {
