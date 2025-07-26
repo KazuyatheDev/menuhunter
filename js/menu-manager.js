@@ -128,10 +128,13 @@ const MenuManager = {
 
     updateMenuSection(sectionId, items) {
         const section = document.getElementById(sectionId);
+        const menuSection = section.closest('.menu-section');
         section.innerHTML = '';
 
+        let hasItems = false;
         items.forEach(item => {
             if (item.name.trim() !== '') {
+                hasItems = true;
                 const menuItem = document.createElement('div');
                 menuItem.className = 'menu-item';
                 menuItem.innerHTML = `
@@ -144,6 +147,15 @@ const MenuManager = {
                 section.appendChild(menuItem);
             }
         });
+
+        // Hide section if no items
+        if (menuSection) {
+            if (hasItems) {
+                menuSection.classList.remove('empty-section');
+            } else {
+                menuSection.classList.add('empty-section');
+            }
+        }
     },
 
     addMenuItem(section) {
