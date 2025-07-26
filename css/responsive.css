@@ -232,7 +232,7 @@
 /* Force desktop layout for image downloads */
 .force-desktop-layout .menu-columns {
     grid-template-columns: 1fr 1fr !important;
-    gap: 25px !important;
+    gap: 6px !important;
 }
 
 .force-desktop-layout .menu-container {
@@ -272,23 +272,60 @@
 }
 
 .force-desktop-layout .menu-content {
-    padding: 25px 20px !important;
+    padding: 15px 12px 10px 12px !important;
 }
 
 .force-desktop-layout .section-title {
-    font-size: 1.1em !important;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    margin-bottom: 4px !important;
 }
 
 .force-desktop-layout .item-name {
-    font-size: 0.85em !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
 }
 
 .force-desktop-layout .item-price {
-    font-size: 0.85em !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
 }
 
 .force-desktop-layout .item-description {
-    font-size: 0.7em !important;
+    font-size: 10px !important;
+    color: #888888 !important;
+    font-weight: 300 !important;
+}
+
+.force-desktop-layout .menu-section {
+    padding: 6px !important;
+    margin-bottom: 4px !important;
+}
+
+.force-desktop-layout .menu-column {
+    gap: 6px !important;
+}
+
+.force-desktop-layout .date-section {
+    margin-bottom: 8px !important;
+}
+
+.force-desktop-layout .date-display {
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+    color: #2c3e50 !important;
+    padding: 2px 0 !important;
+}
+
+.force-desktop-layout .menu-item {
+    margin-bottom: 4px !important;
+    padding: 4px 6px !important;
+}
+
+.force-desktop-layout .item-header::before {
+    margin: 0 4px !important;
 }
 
 /* Print and image generation optimizations */
